@@ -141,7 +141,7 @@
   
     .PreparingForAIPanel {
       margin-left: 3%;
-      width: 100%;
+      width: 95%;
       height: 700px;
       border-radius: 30px;
     }
@@ -236,8 +236,8 @@
         
         .slider__nav:nth-of-type(3) {display: block;}
         .slider__nav:checked:nth-of-type(1) ~ .slider__inner {left: -9%;}
-        .slider__nav:checked:nth-of-type(2) ~ .slider__inner {left: -132%;}
-        .slider__nav:checked:nth-of-type(3) ~ .slider__inner {left: -255%;}
+        .slider__nav:checked:nth-of-type(2) ~ .slider__inner {left: -128%;}
+        .slider__nav:checked:nth-of-type(3) ~ .slider__inner {left: -245%;}
         .slider__nav:checked:nth-of-type(4) ~ .slider__inner {left: -314%;}
     }
 
@@ -258,7 +258,7 @@
     /*FOOTER*/
 
     .footer {
-        width: 100%;
+        width: 95%;
         height: 780px;
         margin-left: 3%;
         flex-direction: column;
