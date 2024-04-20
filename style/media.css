@@ -1,4 +1,4 @@
-@media (max-width: 425px) {
+@media (max-width: 360px) {
     :root {
       width: 100%;
     }
@@ -97,6 +97,7 @@
     /*MAIN*/
   
     .Main {
+      flex-direction: column;
       display: block;
       width: 100%;
       text-align: left;
@@ -114,50 +115,54 @@
       margin-left: 5%;
       font-size: 32px;
     }
+
+    .Info {
+      flex-direction: column;
+      margin: 0;
+    }
   
     .Info .Column:nth-child(1){
-      margin-left: 250px;
+      margin: 0;
+      margin-top: 30px;
+      margin-left: 230px;
     }
   
     .Info .Column:nth-child(2){
-      margin-top: 500px;
-      margin-left: -1200px;
+      margin: 0;
+      margin-left: 230px;
     }
   
     .Info .Column:nth-child(3){
-      margin-top: 1000px;
-      margin-left: -1100px;
+      margin: 0;
+      margin-left: 230px;
     }
   
     /*PreparingForAIPanel*/
   
     .PreparingForAIPanel {
       width: 100%;
-      height: 800px;
+      height: 700px;
       border-radius: 30px;
     }
   
     .PreparingForAIPanel .RightBox {display: none;}
   
     .PreparingForAIPanel .LeftBox {
-      margin-top: 0px;
+      margin: 0 0 0 0;
     }
   
     .PreparingForAIPanel .LeftBox .subtitle {
-      margin-left: 20%;
-      text-align: center;
       font-size: 16px;
     }
   
     .PreparingForAIPanel .LeftBox .header {
-      margin-left: 20%;
-        text-align: center;
-        font-size: 40px;
+      margin-left: -20px;
+      font-size: 40px;
     }
   
     .LeftBox .fieldset {
-      margin-left: 95px;
       width: 350px;
+      margin: 0 0 0 -20px;
   
       .selector {
         grid-area: 1/1/2/2;
@@ -192,33 +197,32 @@
     }
   
     .LeftBox .tab {
-        margin-top: 20px;
+      margin: 0 0 0 0;
       display: block;
-      width: 450px;
     }
   
     .LeftBox .tab .InfoPreparingForAIPanel{
       white-space: nowrap;
-      margin-left: 80px;
+      margin: 0 0 0 -50px;
     }
     .LeftBox .tab .InfoPreparingForAIPanel li{
       font-size: 15px;
     }
   
     .LeftBox .tab .DescriptionPreparingForAIPanel{
-      margin-left: 100px;
-      padding-right: 5px;
+      margin: 0 0 0 0;
+      padding-right: 10px;
     }
 
     .Marks {
-      margin-left: 100px;
-      margin-top: 50px;
+      margin-top: 10px;
+      margin-left: -20px;
       font-size: 28px;
     }
 
     .MoreDetailed {
-        margin-left: 100px;
-        margin-top: 30px;
+      margin: 0 0 0 0;
+      margin-top: 30px;
     }
 
     /*SLIDER*/
@@ -228,7 +232,7 @@
         
         .slider__nav:nth-of-type(3) {display: block;}
         .slider__nav:checked:nth-of-type(1) ~ .slider__inner {left: -10%;}
-        .slider__nav:checked:nth-of-type(2) ~ .slider__inner {left: -130%;}
+        .slider__nav:checked:nth-of-type(2) ~ .slider__inner {left: -140%;}
         .slider__nav:checked:nth-of-type(3) ~ .slider__inner {left: -260%;}
         .slider__nav:checked:nth-of-type(4) ~ .slider__inner {left: -314%;}
     }
@@ -243,9 +247,10 @@
 
     .footer {
         width: 100%;
-        height: 800px;
+        height: 780px;
+        flex-direction: column;
         .leftFooter {
-            margin-top: 400px;
+            margin-top: 440px;
             margin-left: 20px;
 
             .TitleFooter{
@@ -272,10 +277,9 @@
         }
 
         .RightFooter{
+            margin-top: -700px;
             width: 90%;
             height: 400px;
-            margin-top: -300px;
-            margin-left: -350px;
 
           .Line{
             width: 80%;
