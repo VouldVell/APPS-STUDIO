@@ -18,7 +18,11 @@
     align-items: center;
     justify-content: space-between;
   }
-  .header__container img{margin-right: 20px;}
+  .header__container img{margin-right: 10px;}
+
+  .header .buyButton{
+    margin-left: -30px;
+  }
 
   .burger {
     display: none;

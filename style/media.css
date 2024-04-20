@@ -1,14 +1,19 @@
-@media (max-width: 320px) {
+@media (max-width: 425px) {
     :root {
       width: 100%;
     }
   
     /*HEADER*/
-    .header__container button{
+    .header__container{
+      margin-left: 10px;
+      justify-content: space-between;
+    }
+    .header__container .burger{
       margin-right: 20px;
       z-index: 10;
     }
     .header__container a {
+      margin-right: 10px;
       z-index: 10;
     }
   
@@ -93,23 +98,26 @@
     /*MAIN*/
   
     .Main {
-      display: flex;
+      display: block;
+      width: 100%;
       text-align: left;
     }
     .Main .Logo {display: none;}
   
     .Main p:nth-child(1) {
-      margin: 50px 0 0 30px;
-      font-size: 36px;
+      margin-top: 50px;
+      margin-left: 5%;
+      font-size: 32px;
     }
   
     .Main p:nth-child(2) {
-      margin: 90px 0 0 -454px;
-      font-size: 36px;
+      margin-top: 5px;
+      margin-left: 5%;
+      font-size: 32px;
     }
   
     .Info .Column:nth-child(1){
-      margin-left: 300px;
+      margin-left: 250px;
     }
   
     .Info .Column:nth-child(2){
@@ -119,7 +127,7 @@
   
     .Info .Column:nth-child(3){
       margin-top: 1000px;
-      margin-left: -1000px;
+      margin-left: -1100px;
     }
   
     /*PreparingForAIPanel*/
@@ -137,24 +145,26 @@
     }
   
     .PreparingForAIPanel .LeftBox .subtitle {
+      margin-left: 20%;
       text-align: center;
       font-size: 16px;
     }
   
     .PreparingForAIPanel .LeftBox .header {
+      margin-left: 20%;
         text-align: center;
         font-size: 40px;
     }
   
     .LeftBox .fieldset {
-      margin-left: 45px;
-      width: 400px;
+      margin-left: 80px;
+      width: 370px;
   
       .selector {
         grid-area: 1/1/2/2;
         
         height: 100%;
-        width: 150px;
+        width: 130px;
         border-radius: 60px;
         position: relative;
         pointer-events: none;
@@ -166,11 +176,11 @@
           position: absolute;
           top: 0;
           left: 0px;
-          width: 130px;
+          width: 120px;
           height: 100%;
           background-color: #fff;
           border-radius: inherit;
-          transform: translateX(calc(var(--active) * (100%)));
+          transform: translateX(calc(var(--active) * (100% - 3px)));
     
           transition: 0.4s transform cubic-bezier(0.28, 1.33, 0.64, 1);
         }
@@ -178,8 +188,8 @@
     }
   
     .LeftBox .fieldset span {
-      margin-left: -17px;
-      font-size: 16px;
+      margin-left: -20px;
+      font-size: 14px;
     }
   
     .LeftBox .tab {
@@ -189,24 +199,24 @@
     }
   
     .LeftBox .tab .InfoPreparingForAIPanel{
-      margin-left: 50px;
+      margin-left: 60px;
     }
     .LeftBox .tab .InfoPreparingForAIPanel li{
       font-size: 15px;
     }
   
     .LeftBox .tab .DescriptionPreparingForAIPanel{
-      margin-left: 60px;
+      margin-left: 90px;
     }
 
     .Marks {
-        margin-left: 50px;
-        margin-top: 50px;
-        font-size: 32px;
+      margin-left: 90px;
+      margin-top: 50px;
+      font-size: 28px;
     }
 
     .MoreDetailed {
-        margin-left: 50px;
+        margin-left: 90px;
         margin-top: 30px;
     }
 
@@ -216,9 +226,9 @@
         width: 100%;
         
         .slider__nav:nth-of-type(3) {display: block;}
-        .slider__nav:checked:nth-of-type(1) ~ .slider__inner {left: -4.5%;}
-        .slider__nav:checked:nth-of-type(2) ~ .slider__inner {left: -113.5%;}
-        .slider__nav:checked:nth-of-type(3) ~ .slider__inner {left: -222%;}
+        .slider__nav:checked:nth-of-type(1) ~ .slider__inner {left: -10%;}
+        .slider__nav:checked:nth-of-type(2) ~ .slider__inner {left: -130%;}
+        .slider__nav:checked:nth-of-type(3) ~ .slider__inner {left: -250%;}
         .slider__nav:checked:nth-of-type(4) ~ .slider__inner {left: -314%;}
     }
 
