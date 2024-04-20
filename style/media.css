@@ -146,23 +146,21 @@
     }
   
     .PreparingForAIPanel .RightBox {display: none;}
-  
-    .PreparingForAIPanel .LeftBox {
-      margin: 0 0 0 0;
-    }
-  
+
     .PreparingForAIPanel .LeftBox .subtitle {
+      margin-left: 10%;
       font-size: 16px;
     }
   
     .PreparingForAIPanel .LeftBox .header {
-      margin-left: -20px;
+      margin-left: 10%;
       font-size: 40px;
     }
   
     .LeftBox .fieldset {
-      width: 350px;
-      margin: 0 0 0 -20px;
+      width: 340px;
+      margin: 0 0 0 0;
+      margin-left: 10%;
   
       .selector {
         grid-area: 1/1/2/2;
@@ -197,32 +195,32 @@
     }
   
     .LeftBox .tab {
-      margin: 0 0 0 0;
+      margin-left: 5%;
       display: block;
     }
   
     .LeftBox .tab .InfoPreparingForAIPanel{
       white-space: nowrap;
-      margin: 0 0 0 -50px;
+      margin-left: 0px;
     }
     .LeftBox .tab .InfoPreparingForAIPanel li{
       font-size: 15px;
     }
   
     .LeftBox .tab .DescriptionPreparingForAIPanel{
-      margin: 0 0 0 0;
-      padding-right: 10px;
+      margin-left: 30px;
+      padding-right: 5px;
     }
 
     .Marks {
       margin-top: 10px;
-      margin-left: -20px;
-      font-size: 28px;
+      margin-left: 30px;
+      font-size: 25px;
     }
 
     .MoreDetailed {
-      margin: 0 0 0 0;
-      margin-top: 30px;
+      margin-left: 15%;
+      margin-top: 20px;
     }
 
     /*SLIDER*/
@@ -231,16 +229,24 @@
         width: 100%;
         
         .slider__nav:nth-of-type(3) {display: block;}
-        .slider__nav:checked:nth-of-type(1) ~ .slider__inner {left: -10%;}
-        .slider__nav:checked:nth-of-type(2) ~ .slider__inner {left: -140%;}
-        .slider__nav:checked:nth-of-type(3) ~ .slider__inner {left: -260%;}
+        .slider__nav:checked:nth-of-type(1) ~ .slider__inner {left: -12%;}
+        .slider__nav:checked:nth-of-type(2) ~ .slider__inner {left: -135%;}
+        .slider__nav:checked:nth-of-type(3) ~ .slider__inner {left: -258%;}
         .slider__nav:checked:nth-of-type(4) ~ .slider__inner {left: -314%;}
     }
 
     .slider .slider__contents .slider__caption .RightSlider img {display: none;}
 
     .slider .slider__contents .slider__caption {
-        width: 100%;
+        width: 95%;
+    }
+
+    .slider__caption .LeftSlider .Tags, .Tags1, .Tags2{
+      margin: 0 0 3px 0px;
+      position: relative;
+      text-align: center;
+      border-collapse: separate;
+      border-spacing: 10px 0;
     }
 
     /*FOOTER*/

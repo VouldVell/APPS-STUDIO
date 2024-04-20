@@ -568,7 +568,8 @@
   position: relative;
   text-align: center;
   border-collapse: separate;
-  border-spacing: 10px 0;}
+  border-spacing: 10px 0;
+}
 .slider__caption .LeftSlider .Tags td, .Tags1 td, .Tags2 td{
   text-decoration: none;
   height: 25px;
