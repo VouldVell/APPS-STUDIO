@@ -102,7 +102,7 @@
 
   .Main {
     display: flex;
-    width: 1450px;}
+  }
   .Main p {
     white-space: nowrap;
     font-family: var(--font);
@@ -130,7 +130,6 @@
     height: 591px;
     margin-top: -70px;}
   .Info {
-    width: 1450px;
     margin: 0 auto;
     margin-top: 100px;
     flex-wrap: wrap;
