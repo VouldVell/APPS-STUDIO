@@ -584,7 +584,7 @@
   width: 330px;
 }
 .slider__caption .LeftSlider .Tags td{min-width: 50px;}
-.slider__caption .LeftSlider .Tags1 td{min-width: 120px;}
+.slider__caption .LeftSlider .Tags1 td{min-width: 100px;}
 .slider__caption .LeftSlider .Tags2 td{min-width: 85px;}
 .slider__caption .LeftSlider .Tags2 td:nth-child(3){width: 130px;}
 .slider__caption .LeftSlider .Tags1 td:nth-child(2){min-width: 80px;}
