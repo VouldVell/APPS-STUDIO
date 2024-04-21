@@ -30,17 +30,17 @@
         transition: 0.4s transform cubic-bezier(0.28, 1.33, 0.64, 1);
       }
     }
+  }
 
-    .LeftBox .tab .InfoPreparingForAIPanel li{
-      font-size: 13px;
-    }
+  .PreparingForAIPanel .LeftBox .tab .InfoPreparingForAIPanel li{
+    font-size: 14px;
   }
    
-  }
+}
 
   @media (max-width: 425px) {
     :root {
-      width: 100%;
+      width: 100vw;
     }
   
     /*HEADER*/
@@ -61,7 +61,7 @@
       position: absolute;
       left: 0;
       top: 0;
-      width: 100%;
+      width: 100vw;
       height: 100vh;
       overflow-y: auto;
       background-color: var(--bg);
@@ -101,16 +101,19 @@
         margin-top: 0px;
         margin-left: 0px;
         text-align: left;
-        box-shadow: 0px 3px 5px -1px #ccc;}
+        box-shadow: 0px 3px 5px -1px #ccc;
+      }
       ul li ul li {
         min-width: 100px;
         text-align: left;
         margin-bottom: 20px;
-        border-style: none;}
+        border-style: none;
+      }
       ul li ul li a:hover {
         padding-left: 10px;
         /*border-left: 2px solid #0004ff;*/
-        transition: all 0.3s ease;}
+        transition: all 0.3s ease;
+      }
     }
   
     .nav--active ~ .primary-navigation{
@@ -182,7 +185,7 @@
       margin-left: 0;
       margin-right: 0;
       justify-content: space-around;
-      width: 100%;
+      width: 100vw;
       height: 700px;
       border-radius: 30px;
     }
@@ -203,13 +206,13 @@
   
     .LeftBox .fieldset {
       text-align: center;
-      width: 95%;
+      width: 95vw;
       margin-bottom: 10px;
   
       .selector {
         grid-area: 1/1/2/2;
         
-        height: 100%;
+        height: 100vw;
         width: 130px;
         border-radius: 60px;
         position: relative;
@@ -252,15 +255,16 @@
       width: 300px;
       text-align: left;
       white-space: nowrap;
-      margin-left: -20px;
+      margin-left: -25px;
     }
     .LeftBox .tab .InfoPreparingForAIPanel li{
-      font-size: 15px;
+      margin-left: -35px;
+      font-size: 16px;
     }
   
     .LeftBox .tab .DescriptionPreparingForAIPanel{
       margin-left: 5px;
-      width: 99%;
+      width: 98%;
       padding-right: 9px;
       margin-top: 10px;
     }
@@ -280,22 +284,22 @@
     /*SLIDER*/
 
     .slider {
-        width: 100%;
+        width: 100vw;
         margin-left: 0;
         margin-right: 0;
         
         .slider__nav:nth-of-type(3) {display: block;}
-        .slider__nav:checked:nth-of-type(1) ~ .slider__inner {left: -10%;}
-        .slider__nav:checked:nth-of-type(2) ~ .slider__inner {left: -129%;}
-        .slider__nav:checked:nth-of-type(3) ~ .slider__inner {left: -249%;}
-        .slider__nav:checked:nth-of-type(4) ~ .slider__inner {left: -300%;}
+        .slider__nav:checked:nth-of-type(1) ~ .slider__inner {left: -6vw;}
+        .slider__nav:checked:nth-of-type(2) ~ .slider__inner {left: -119.5vw;}
+        .slider__nav:checked:nth-of-type(3) ~ .slider__inner {left: -233vw;}
+        .slider__nav:checked:nth-of-type(4) ~ .slider__inner {left: -300vw;}
     }
 
     .slider .slider__contents .slider__caption .RightSlider img {display: none;}
 
-    .slider .slider__contents .slider__caption {
+    .slider__caption {
         margin: 0;
-        width: 95%;
+        width: 95vw;
     }
 
     .slider__caption .LeftSlider .Tags, .Tags1, .Tags2{
