@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="preload" href="/fonts/Halvar/HalvarMittel-Rg.woff" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/media.css">
+    <link rel="icon" type="image/png" href="/image/NameWeb.svg"/>
+    <title>О студии 🦾 | ООО «Студия приложений» (APPs Studio)</title>
+</head>
+
+
+<body>
+    <header>
+        <div class="header__container">
+
+            <button class="burger" id="burger"><img src="./image/Burger.svg" alt=""></button>
+              <a href="index.html"><img src="./image/NameWeb.svg" alt="Иконка Компании"></a>
+              <button type="button" class="buyButton btn" onclick="window.scrollTo(0, document.body.scrollHeight);">Заказать</button>
+
+              <nav class="primary-navigation">
+                <ul>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="StagesOfWork.html">Этапы работ</a></li>
+                    <li><a href="AboutTheStudio.html">О студии</a></li>
+        
+                    <li><a href="#">Отзывы&dtrif;</a>
+                        <ul class="dropdown">
+                            <li><a href="Error404.html">HH.ru</a></li>
+                            <li><a href="Error404.html">Habr</a></li>
+                            <li><a href="Error404.html">Startpack</a></li>
+                            <li><a href="Error404.html">wohoo</a></li>
+                        </ul>
+                    </li>
+        
+                    <li><a href="contacts.html">Контакты &#10132;</a></li>
+                </ul>
+              </nav>
+
+              <script>
+                const burger = document.getElementById("burger")
+                const nav = document.getElementById("nav")
+
+                burger.addEventListener("click", function () {
+                burger.classList.toggle("nav--active")
+                })
+              </script>
+        </div>
+    </header>
+    
+      <footer>
+        <div class="footer">
+            <div class="leftFooter ContactInfo">
+                <p class="TitleFooter"> Контакты</p>
+                <p class="Number">8 (800) 707-23-60</p>
+                <p class="Email">hi@appsstudio.ru</p>
+    
+                <table class="FeedBack">
+                    <tr>
+                        <td>
+                            <img src="./image/Telegram.svg" alt="">
+                        </td>
+                        <td><span>Telegram</span></td>
+                        <td>
+                            <img src="./image/WhatsApp.svg" alt="">
+                        </td>
+                        <td><span>WhatsApp</span></td>
+                    </tr>
+                </table>
+    
+                <div class="Contry">
+                    <p>Россия</p>
+                    <div class="Line"></div>
+                    <p>© ООО “АППсСтудио”, 2013 - ∞ </p>
+                </div>
+            </div>
+            <div class="RightFooter">
+                <form>
+                    <input type="text" id="fname" placeholder="Имя" class="InfoPlayer">
+                    <div class="Line"></div>
+                    <input type="text" id="lname" placeholder="Фамилия" class="InfoPlayer">
+                    <div class="Line"></div>
+                    <input type="text" id="Email" placeholder="Почта" class="InfoPlayer">
+                    <div class="Line"></div>
+
+                    <button type="reset" class="btnFooter btn" id="btnFooter">Отправить</button>
+                  </form>
+            </div>
+            <script src="button.js"></script>
+        </div>
+    </footer>
+</body>
+
+
+</html>
+
