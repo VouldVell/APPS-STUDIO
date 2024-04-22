@@ -281,6 +281,26 @@
       margin-top: 15px;
     }
 
+    .Portfolio{
+      height: 400px;
+
+      .LeftBox {
+
+        .header{
+          font-size: 32px;
+        }
+
+        .DescriptionPreparingForAIPanel{
+          font-size: 22px;
+        }
+
+        .Marks{
+          font-size: 40px;
+        }
+
+      }
+    }
+
     /*SLIDER*/
 
     .slider {
@@ -353,11 +373,46 @@
         .RightFooter{
             width: 90%;
             height: 400px;
-            margin-top: 70px;
+            margin-top: -630px;
 
           .Line{
             width: 80%;
           }
         }
+
+        .ContactsLeft{
+          padding-top: 20px;
+          padding-left: 0px;
+          justify-content: center;
+
+          .link{
+            width: 90vw;
+          }
+        }
+
+        .ContactsRight{
+          margin-top: 0;
+          margin-left: 0px;
+          width: 90%;
+
+          .Line {
+            width: 80vw;
+          }
+        }
+
+        .ContactsFORM {
+          justify-content: center;
+          margin-top: 0;
+          margin-left: -20px;
+          width: 100vw;
+
+          .Line{
+            margin-left: 30px;
+          }
+        }
+    }
+
+    .ContactInfo{
+      height: 950px;
     }
   }

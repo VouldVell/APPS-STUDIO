@@ -178,6 +178,7 @@
   }
 
    .PreparingForAIPanel {
+      margin-top: 20px;
       display: flex;
       flex: 0 0 auto;
       flex-direction: row;
@@ -408,6 +409,94 @@
   box-sizing: border-box;
 }
 
+.Portfolio{
+  height: 600px;
+
+  .RightBox{
+    height: 100%;
+    width: 50%;
+
+    .RightCircle1{
+
+      img{
+        width: 250px;
+        height: 100%;
+        margin: 6% 0 0 35%;
+      }
+    }
+
+    .RightCircle2{
+
+      img{
+        width: 250px;
+        height: 100%;
+        margin: 5% 0 0 29%;
+      }
+    }
+  }
+
+  .LeftBox{
+
+    .header {
+      font-size: 70px;
+      margin-top: 0px;
+    }
+
+    .DescriptionPreparingForAIPanel{
+      font-size: 20px;
+    }
+
+    .Marks{
+      margin-top: 30px;
+    }
+  }
+}
+
+.Video{
+  margin-top: 20px;
+  width: 100%;
+  height: 600px;
+  flex-direction: row;
+  background: #eaf0f6;
+  border-radius: 60px;
+  font-family: var(--font);
+
+  p{
+    padding-left: 200px;
+    padding-top: 200px;
+    font-weight: 700px;
+    font-size: 80px;
+  }
+
+  video{
+    margin-left: 600px;
+    margin-top: -270px;
+    width: 800px;
+    height: 550px;
+  }
+}
+
+.Stage{
+  display: flexbox;
+  width: 100%;
+  height: 500px;
+  background: #eaf0f6;
+  border-radius: 60px;
+  font-family: var(--font);
+
+  .NumberStage{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 15px;
+    margin-left: 50px;
+
+    p {
+      font-size: 50px;
+      padding-left: 15px;
+    }
+  }
+}
 
 .slider {
   margin-top: -50px;
@@ -749,6 +838,7 @@
     width: 320px;
     height: 1px;
     border-radius: 10px;
+    justify-content: center;
     background-color: black;
   }
 
