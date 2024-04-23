@@ -1,7 +1,7 @@
-var fname = document.getElementById("fname");
-var lname = document.getElementById("lname");
-var Email = document.getElementById("Email");
-var button = document.getElementById("btnFooter")
+const fname = document.getElementById("fname");
+const lname = document.getElementById("lname");
+const Email = document.getElementById("Email");
+const button = document.getElementById("btnFooter");
 
 button.setAttribute("disabled","");
 
@@ -23,12 +23,8 @@ Email.addEventListener("input", function() {
     checkInput(Email);
 })
 
-function onclickBTN(){
-	alert("Спасибо за ваш интерес к нашему сервису! Мы получили вашу заявку и будем рады помочь вам. Наша команда свяжется с вами в ближайшее время.")
-}
-
 function checkInput(obj ){
-	if(obj.value !="")
+	if(obj.value !=="")
     {
 		checkInputs[obj.id] = true;
 		activateButton();
@@ -36,10 +32,13 @@ function checkInput(obj ){
 }
 
 function activateButton(){
-	for( elem in checkInputs ){
+	for(let elem in checkInputs ){
 		if(!checkInputs[elem]) return;
 	}
 	button.removeAttribute("disabled","");
 }
 
-button.addEventListener("onclick", onclickBTN);
+function onclickBTN(){
+	alert("Спасибо за ваш интерес к нашему сервису! Мы получили вашу заявку и будем рады помочь вам. Наша команда свяжется с вами в ближайшее время.");
+}
+

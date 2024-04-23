@@ -34,7 +34,7 @@
   nav {
     &.primary-navigation {
       margin: 0 auto;
-      display: flexbox;
+      display: flex;
     
       font-family: var(--font);
       font-style: normal;
@@ -281,7 +281,8 @@
     padding: 10px 20px;
     position: relative;
     text-decoration: none;
-    text-align: left;}
+    text-align: left;
+  }
 
   .DescriptionPreparingForAIPanel {
     justify-content: left;
@@ -464,7 +465,7 @@
   p{
     padding-left: 200px;
     padding-top: 200px;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 80px;
   }
 
@@ -477,27 +478,197 @@
 }
 
 .Stage{
-  display: flexbox;
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  height: 500px;
+  height: 700px;
   background: #eaf0f6;
   border-radius: 60px;
+  margin-top: 30px;
   font-family: var(--font);
 
   .NumberStage{
-    width: 50px;
-    height: 50px;
+    margin: 100px 0 0 90px;
+    width: 180px;
+    height: 180px;
     background: white;
-    border-radius: 15px;
-    margin-left: 50px;
-
+    border-radius: 30px;
+    
     p {
-      font-size: 50px;
-      padding-left: 15px;
+      font-size: 150px;
+      padding-top: 5px;
+      padding-left: 50px;
+    }
+
+    
+  }
+  
+  .StageInformation {
+    margin-left: 100px;
+    width: 70%;
+
+    .NameStage {
+      font-size: 70px;
+      font-weight: 700;
+      padding-top: 50px;
+    }
+    .Description{
+      margin-top: 30px;
+      font-size: 28px;
+      font-weight: 500;
+      color: rgb(106, 106, 106);
+    }
+    .additionally {
+      margin-top: 50px;
+      font-size: 40px;
+      font-weight: 700;
+    }
+    
+    .point{
+      margin-left: -50px;
+      
+      .InfoPreparingForAIPanel li {
+        font-size: 27px;
+        font-weight: 300;
+      }
     }
   }
 }
 
+.Stage3 {
+  height: 750px;
+}
+
+.Stage4 {
+  height: 1300px;
+}
+.Stage5{
+  height: 900px;
+}
+
+.stagesInfo__box {
+  width: 100%;
+  height: 100%;
+  background: #eaf0f6;
+  margin: 30px 0 0 0;
+  border-radius: 60px;
+  font-family: var(--font);
+
+  .stagesInfo__content {
+    width: 100%;
+    padding: 46px 50px 25px;
+
+    .stagesInfo__title {
+      max-width: 100%;
+      font-size: 26px;
+      line-height: 1.3;
+      color: #151516;
+      margin-bottom: 20px;
+    }
+
+    .stagesInfo__texts {
+      font-size: 16px;
+      line-height: 1.4;
+      color: #151516;
+      max-width: 100%;
+      
+      td {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+.caseOrder {
+  width: 100%;
+  height: 970px;
+  text-align: center;
+  font-family: var(--font);
+  
+  .Title {
+    margin: 100px 0 0 0;
+    width: 50%;
+    text-align:left;
+    font-size: 60px;
+    font-weight: 700px;
+  }
+  .blockTitle {
+    margin-top: 50px;
+    text-align:left;
+    font-size: 30px;
+    font-weight: 500px;
+  }
+  
+  .Cases {
+    button{
+      width: 310px;
+      height: 100px;
+      font-size: 25px;
+    }
+  }
+  
+  .servicesForm__step{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    background: rgb(255, 255, 255);
+    border-radius: 60px;
+    box-shadow: 0 0 70px 10px #15151646;
+    .servicesForm__head {
+      width: 100%;
+      height: 120px;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 0;
+
+      p:nth-child(1) {padding-top: 20px}
+      p {
+        padding-top: 0px;
+        padding-left: 90px;
+        text-align: left;
+        font-size: 40px;
+      }
+      
+      form {
+        text-align: right;
+        margin: -80px 50px 0 0;
+      }
+    }
+    
+    .Line {
+      width: 100%;
+      height: 1px;
+      background: rgba(45, 45, 45, 0.2);
+    }
+    
+    .servicesForm__info{
+      width: 100%;
+      padding: 26px 20px 26px 52px;
+      
+      .servicesForm__infoInner{
+        text-align: left;
+        width: 100%;
+        height: 100%;
+        padding-right: 32px;
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: var(--font);
+        color: #151516;
+        
+        h3 {
+          max-width: 100%;
+          font-size: 32px;
+          line-height: 1.2;
+          color: #151516;
+          margin-bottom: 18px;
+        }
+      }
+    }
+  }
+}
 .slider {
   margin-top: -50px;
   height: 750px;

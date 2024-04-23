@@ -415,4 +415,144 @@
     .ContactInfo{
       height: 950px;
     }
+    
+    .Video {
+      width: 100vw;
+      height: 350px;
+      text-align: center;
+
+      p {
+        padding: 0 0 0 0;
+      }
+
+      video {
+        margin:  0 0 0 0;
+        width: 95vw;
+        height: 200px;
+      }
+    }
+    
+    .Stage {
+      width: 100vw;
+      flex-direction: column;
+      .NumberStage {
+        width: 80px;
+        height: 80px;
+        margin: 20px 0 0 150px;
+        text-align: center;
+        
+        p {
+          padding: 0;
+          font-size: 50px;
+        }
+      }
+
+      .StageInformation {
+        width: 90%;
+        margin-left: 20px;
+
+        .NameStage {
+          font-size: 30px;
+          font-weight: 700;
+          padding-top: 20px;
+        }
+        .Description{
+          margin-top: 30px;
+          font-size: 16px;
+          font-weight: 500;
+          color: rgb(106, 106, 106);
+        }
+        .additionally {
+          margin-top: 50px;
+          font-size: 20px;
+          font-weight: 700;
+        }
+
+        .point{
+          margin-left: -70px;
+          white-space: nowrap;
+
+          .InfoPreparingForAIPanel li {
+            white-space: pre-line;
+            margin-left: -40px;
+            font-size: 18px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+    
+    .stagesInfo__box {
+      width: 100vw;
+      
+      .stagesInfo__texts {
+        margin: 0 0 0 -30px;
+      }
+    }
+    
+    .caseOrder {
+      width: 100vw;
+      height: 870px;
+      .Title {
+        margin: 30px 0 0 0;
+        font-size: 35px;
+        width: 100vw;
+      }
+      .blockTitle {
+        margin-top: 20px;
+      }
+
+      .Cases {
+        button{
+          white-space: nowrap;
+          padding: 0;
+          width: 100px;
+          height: 50px;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+
+      .servicesForm__step {
+        width: 100vw;
+        .servicesForm__head{
+          flex-direction: column;
+          justify-content: 0;
+          p{
+            text-align: center;
+            padding-left: 0px;
+            font-size: 30px;
+          }
+          form {
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 30px;
+          }
+        }
+      }
+
+      .Line {display: none}
+
+
+      .servicesForm__info{
+        width: 100vw;
+        height: 100vw;
+        height: -moz-calc(100vw - 0px);
+        height: calc(100vw + 100px);
+        padding: 26px 20px 26px 102px;
+
+        .servicesForm__infoInner{
+          text-align: left;
+          width: 95vw;
+          overflow-y: scroll;
+          line-height: 1.5;
+          padding: 30px 10px 20px 0px;
+
+          h3 {
+            max-width: 100vw;
+            font-size: 32px;
+          }
+        }
+      }
+    }
   }
